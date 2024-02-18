@@ -2,10 +2,12 @@
 
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
+import "./link.css";
+import { LinkButtons } from "./LinkButtons";
 
 const Navigation = () => {
   return (
-    <nav className="flex flex-col py-40 justify-between text-[#1513f9] h-screen w-1/2 sticky top-0">
+    <nav className="flex flex-col py-[100px] justify-between text-[#1513f9] h-screen w-1/2 sticky top-0">
       <div>
         <div className="overflow-hidden">
           <motion.h1
@@ -26,43 +28,40 @@ const Navigation = () => {
           </motion.h2>
         </div>
       </div>
-      <div className="flex flex-col">
-        <Link
-          to="about"
-          smooth={true}
-          duration={500}
-          className="cursor-pointer flex items-center gap-x-[10px]"
-          spy={true}
-        >
-          <Bar />
-          about
-        </Link>
-        <Link
-          to="experience"
-          smooth={true}
-          duration={500}
-          className="cursor-pointer flex items-center gap-x-[10px]"
-          spy={true}
-        >
-          <Bar />
-          <span>experience</span>
-        </Link>
-        <Link
-          to="projects"
-          smooth={true}
-          duration={500}
-          className="cursor-pointer flex items-center gap-x-[10px]"
-          spy={true}
-        >
-          <Bar />
-          projects
-        </Link>
+      <div className="flex flex-col gap-y-[100px]">
+        <div>
+          <NavButton name="About" link="about" />
+          <NavButton name="Experience" link="experience" />
+          <NavButton name="Projects" link="projects" />
+        </div>
+        <LinkButtons />
       </div>
     </nav>
   );
 };
 
-const Bar = () => <span className="w-[20px] h-[2px] bg-sienna-blue" />;
+const Bar = () => (
+  <span className="w-[30px] h-[3px] bg-sienna-blue group-hover:w-[60px]" />
+);
+
+interface NavButtonProps {
+  name: string;
+  link: string;
+}
+
+const NavButton = ({ name, link }: NavButtonProps) => (
+  <Link
+    to={link}
+    smooth={true}
+    duration={500}
+    className="cursor-pointer flex items-center gap-x-[20px] my-[6px] font-semibold group text-[16px]"
+    spy={true}
+    offset={-100}
+  >
+    <Bar />
+    {name}
+  </Link>
+);
 
 const info = {
   name: "Sienna",

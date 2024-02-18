@@ -1,0 +1,8 @@
+.active {
+  color: #aaaa;
+}
+
+.active > span {
+  background-color: #aaaa;
+  width: 60px;
+}
