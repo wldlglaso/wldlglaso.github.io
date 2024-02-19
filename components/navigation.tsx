@@ -2,12 +2,17 @@
 
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
-import "./link.css";
 import { LinkButtons } from "./LinkButtons";
+import { Playfair_Display } from "next/font/google";
+import "./link.css";
+
+const playfair = Playfair_Display({ subsets: ["latin"] });
 
 const Navigation = () => {
   return (
-    <nav className="flex flex-col py-[100px] justify-between text-[#1513f9] h-screen w-1/2 sticky top-0">
+    <nav
+      className={`flex flex-col py-[100px] justify-between text-[#1513f9] h-screen w-1/2 sticky top-0 ${playfair.className}`}
+    >
       <div>
         <div className="overflow-hidden">
           <motion.h1
@@ -22,7 +27,7 @@ const Navigation = () => {
           <motion.h2
             initial={{ y: 30 }}
             whileInView={{ y: 0, transition: { duration: 0.5, delay: 0.8 } }}
-            className="text-[25px] mt-[10px]"
+            className="text-[25px] mt-[8px]"
           >
             I'm a Front-end developer.
           </motion.h2>
@@ -41,7 +46,7 @@ const Navigation = () => {
 };
 
 const Bar = () => (
-  <span className="w-[30px] h-[3px] bg-sienna-blue group-hover:w-[60px]" />
+  <span className="w-[30px] h-[3px] bg-sienna-blue group-hover:w-[60px] group-hover:bg-[#aaaa]" />
 );
 
 interface NavButtonProps {
@@ -54,7 +59,7 @@ const NavButton = ({ name, link }: NavButtonProps) => (
     to={link}
     smooth={true}
     duration={500}
-    className="cursor-pointer flex items-center gap-x-[20px] my-[6px] font-semibold group text-[16px]"
+    className="cursor-pointer flex items-center gap-x-[20px] my-[6px] font-semibold group text-[16px] hover:text-[#aaaa]"
     spy={true}
     offset={-100}
   >
