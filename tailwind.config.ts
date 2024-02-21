@@ -10,10 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       colors,
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        spoca: ["Spoqa Han Sans Neo", "sans-serif"],
       },
     },
   },
