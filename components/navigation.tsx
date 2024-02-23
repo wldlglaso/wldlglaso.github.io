@@ -46,7 +46,7 @@ const Navigation = () => {
 };
 
 const Bar = () => (
-  <span className="w-[20px] h-[3px] bg-gray-A group-hover:w-[60px] group-hover:bg-blue-main has-[:active]:bg-blue-main" />
+  <span className="w-[20px] h-[3px] bg-gray-A group-hover:w-[60px] group-hover:bg-blue-main" />
 );
 
 interface NavButtonProps {

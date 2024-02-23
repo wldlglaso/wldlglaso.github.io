@@ -11,7 +11,7 @@ export default function Home() {
   });
 
   return (
-    <main className="w-[740px] pl-[60px] text-gray-4 py-[100px]">
+    <main className="w-[800px] pl-[60px] text-gray-4 py-[100px]">
       <About />
       <Experience />
       <Projects />
