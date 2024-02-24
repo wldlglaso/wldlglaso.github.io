@@ -1,5 +1,5 @@
 const Projects = () => (
-  <section id="projects" className="h-[1000px]">
+  <section id="projects" className="py-[60px] flex flex-col">
     Projects
   </section>
 );

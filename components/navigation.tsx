@@ -59,7 +59,7 @@ const NavButton = ({ name, link }: NavButtonProps) => (
     to={link}
     smooth={true}
     duration={500}
-    className="cursor-pointer flex items-center gap-x-[20px] my-[6px] font-semibold group text-[16px] text-gray-A hover:text-blue-main"
+    className="cursor-pointer flex items-center gap-x-[20px] my-[10px] font-semibold group text-[16px] text-gray-A hover:text-blue-main"
     spy={true}
     offset={-100}
   >

@@ -1,8 +1,5 @@
 const About = () => (
-  <section
-    id="about"
-    className="pb-[60px] border-solid border-b-[2px] border-b-gray-EA text-[18px] leading-[30px]"
-  >
+  <section id="about" className="pb-[60px] text-[18px] leading-[30px]">
     <p>
       <span className="font-semibold">
         4년차 프론트엔드 개발자 임수진입니다.
