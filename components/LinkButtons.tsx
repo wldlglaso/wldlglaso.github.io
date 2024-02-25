@@ -6,7 +6,7 @@ export const LinkButtons = () => (
     <a href={links.github} target="_blank" rel="noopener noreferrer">
       <Github />
     </a>
-    <a href={links.github} target="_blank" rel="noopener noreferrer">
+    <a href={links.linkedIn} target="_blank" rel="noopener noreferrer">
       <LinkedIn />
     </a>
   </div>
@@ -14,4 +14,5 @@ export const LinkButtons = () => (
 
 const links = {
   github: "https://github.com/sujin3473",
+  linkedIn: "https://www.linkedin.com/in/yim-sujin-31418a154/",
 };

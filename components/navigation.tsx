@@ -20,7 +20,7 @@ const Navigation = () => {
             whileInView={{ y: 0, transition: { duration: 0.5 } }}
             className="text-[40px] font-bold text-blue-main"
           >
-            Hi, I'm {info.name}
+            {`Hi, I'm ${info.name}`}
           </motion.h1>
         </div>
         <div className="overflow-hidden">
@@ -29,7 +29,7 @@ const Navigation = () => {
             whileInView={{ y: 0, transition: { duration: 0.5, delay: 0.8 } }}
             className="text-[25px] mt-[8px] text-gray-4"
           >
-            I'm a Front-end developer.
+            {"I'm a Front-end developer."}
           </motion.h2>
         </div>
       </div>
@@ -61,7 +61,7 @@ const NavButton = ({ name, link }: NavButtonProps) => (
     duration={500}
     className="cursor-pointer flex items-center gap-x-[20px] my-[10px] font-semibold group text-[16px] text-gray-A hover:text-blue-main"
     spy={true}
-    offset={-100}
+    offset={name === "About" ? -100 : 0}
   >
     <Bar />
     {name}

@@ -16,12 +16,14 @@ const Card = ({
   mainSkills,
   subSkills,
 }: PropsWithChildren<Experience>) => (
-  <div className="hover:bg-blue-F p-[32px] rounded-[20px] flex gap-x-[32px] w-[680px]">
-    <div className="text-blue-6A text-[14px] font-bold">{period}</div>
+  <div className="hover:bg-blue-F p-[32px] rounded-[20px] flex gap-x-[32px] w-[700px]">
+    <div className="text-blue-6A text-[14px] font-bold w-[100px] shrink-0">
+      {period}
+    </div>
     <div>
-      <p>{company}</p>
+      <p className="text-[20px] font-bold">{company}</p>
       <p>{role}</p>
-      <div className="flex mt-[28px] w-[500px] flex-wrap gap-[8px]">
+      <div className="flex mt-[28px] flex-wrap gap-[8px]">
         {mainSkills.map((skill) => (
           <Chip text={skill} key={skill} />
         ))}

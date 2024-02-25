@@ -3,6 +3,7 @@
 import About from "@/components/about";
 import Experience from "@/components/experience";
 import Projects from "@/components/projects";
+import Footer from "@/components/footer";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <About />
       <Experience />
       <Projects />
+      <Footer />
     </main>
   );
 }
