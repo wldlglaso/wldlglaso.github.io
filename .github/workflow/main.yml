@@ -15,7 +15,7 @@ jobs:
       - name: Install and Build 🔧
         run: |
           yarn install
-          next export && yarn build && touch ./next/.nojekyll
+          next export && yarn build && touch ./out/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
