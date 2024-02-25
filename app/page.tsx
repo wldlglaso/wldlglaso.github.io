@@ -12,7 +12,7 @@ export default function Home() {
   });
 
   return (
-    <main className="w-[800px] mt-[100px] mb-[50px] pl-[60px] text-gray-4 divide-y-2 divide-gray-EA border-solid border-l-[2px] border-l-gray-EA">
+    <main className="w-[800px] my-[100px] pl-[60px] text-gray-4 divide-y-2 divide-gray-EA border-solid border-l-[2px] border-l-gray-EA">
       <About />
       <Experience />
       <Projects />
