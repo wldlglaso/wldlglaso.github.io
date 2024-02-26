@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { projectList, type Project } from "@/constants/projects";
+import { projectList, type Project } from "@/constants";
 import Chevron from "@/public/assets/common/chevron.svg";
 
 const Projects = () => (

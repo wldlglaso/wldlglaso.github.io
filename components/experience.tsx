@@ -13,6 +13,7 @@ const Card = ({
   company,
   period,
   role,
+  descriptions,
   mainSkills,
   subSkills,
 }: PropsWithChildren<Experience>) => (
@@ -22,7 +23,13 @@ const Card = ({
     </div>
     <div>
       <p className="text-[20px] font-bold">{company}</p>
-      <p>{role}</p>
+      <p className="text-[16px] font-bold my-[10px]">{role}</p>
+      {descriptions.map(({ main, sub }, idx) => (
+        <div className="pt-[10px] text-gray-6" key={idx}>
+          <p className="font-bold">{main}</p>
+          <p>{sub}</p>
+        </div>
+      ))}
       <div className="flex mt-[28px] flex-wrap gap-[8px]">
         {mainSkills.map((skill) => (
           <Chip text={skill} key={skill} />
