@@ -11,7 +11,7 @@ const Projects = () => (
 );
 
 const Card = ({ title, description, image, url }: Project) => (
-  <div className="flex gap-x-[28px]">
+  <div className="flex flex-col md:flex-row gap-x-[28px]">
     <Image
       src={image}
       alt={title}

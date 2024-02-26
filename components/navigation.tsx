@@ -10,7 +10,7 @@ const playfair = Playfair_Display({ subsets: ["latin"] });
 
 const Navigation = () => {
   return (
-    <nav className="py-[100px] flex flex-col justify-between h-screen w-[380px] sticky top-0">
+    <nav className="py-[100px] flex flex-col justify-between h-screen w-full md:w-[380px] relative md:sticky top-0">
       <div className={playfair.className}>
         <div className="overflow-hidden">
           <motion.h1
