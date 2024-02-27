@@ -17,14 +17,14 @@ const Card = ({ title, description, image, url }: Project) => (
       alt={title}
       width={280}
       height={160}
-      className="shrink-0"
+      className="shrink-0 mx-auto"
     />
-    <div className="flex flex-col justify-between py-[8px]">
+    <div className="flex flex-col justify-between py-[8px] mt-[10px] md:mt-0">
       <div>
         <p className="text-[20px] font-bold">{title}</p>
         <p className="text-[16px] mt-[16px]">{description}</p>
       </div>
-      <button className="flex items-center">
+      <button className="flex items-center mt-[10px] md:mt-0">
         <span className="mr-[4px] text-[14px] font-bold text-blue-main">
           Read more
         </span>
