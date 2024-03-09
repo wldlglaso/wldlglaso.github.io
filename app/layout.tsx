@@ -14,12 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-spoca">
-        <div className="flex flex-col md:flex-row px-6 mx-auto w-full md:w-[1200px] relative">
-          <Navigation />
-          {children}
-        </div>
-      </body>
+      <body className="font-spoca">{children}</body>
     </html>
   );
 }

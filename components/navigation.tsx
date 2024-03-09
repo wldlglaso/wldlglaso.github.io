@@ -1,6 +1,7 @@
 "use client";
 
 import { Link } from "react-scroll";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { LinkButtons } from "./LinkButtons";
 import { Playfair_Display } from "next/font/google";

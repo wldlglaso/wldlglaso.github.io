@@ -1,10 +1,11 @@
 "use client";
 
+import { useEffect } from "react";
+import Navigation from "@/components/navigation";
 import About from "@/components/about";
 import Experience from "@/components/experience";
 import Projects from "@/components/projects";
 import Footer from "@/components/footer";
-import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
@@ -12,11 +13,14 @@ export default function Home() {
   });
 
   return (
-    <main className="w-full md:w-[800px] my-[100px] md:pl-[60px] text-gray-4 divide-y-2 divide-gray-EA border-solid md:border-l-[2px] border-l-gray-EA">
-      <About />
-      <Experience />
-      <Projects />
-      <Footer />
-    </main>
+    <div className="flex flex-col md:flex-row px-6 mx-auto w-full md:w-[1200px] relative">
+      <Navigation />
+      <main className="w-full md:w-[800px] my-[100px] md:pl-[60px] text-gray-4 divide-y-2 divide-gray-EA border-solid md:border-l-[2px] border-l-gray-EA">
+        <About />
+        <Experience />
+        <Projects />
+        <Footer />
+      </main>
+    </div>
   );
 }
