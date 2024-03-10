@@ -7,9 +7,10 @@ export type Project = {
 
 export type ProjectDetail = {
   id: string;
+  name: string;
   contribution: number;
+  period: string;
   description: string;
-  image: string;
 };
 
 export const projectList: Project[] = [
@@ -24,7 +25,7 @@ export const projectList: Project[] = [
     title: "Dolfin Microsite",
     description:
       "Dolfin Microsite(반응형 사이트) 프론트엔드 개발. Storybook을 도입하여 재사용 가능한 UI 프로토타입 개발&디자이너와의 업무 프로세스를 개선하였습니다.",
-    image: "./assets/projects/dolfin.png",
+    image: "./assets/projects/microsite.png",
     url: "/microsite",
   },
   {
@@ -53,32 +54,37 @@ export const projectList: Project[] = [
 export const projectDetails: ProjectDetail[] = [
   {
     id: "dolfin",
+    name: "Dolfin User side, Admin side",
     contribution: 60,
+    period: "Sep 2022 - Present",
     description: "",
-    image: "",
   },
   {
     id: "microsite",
+    name: "Dolfin Microsite",
+    period: "Aug 2023 - Feb 2024",
     contribution: 100,
     description: "",
-    image: "",
   },
   {
     id: "lottemart",
+    name: "롯데마트GO - 코인 시스템",
+    period: "Jun 2021 - May 2022",
     contribution: 90,
     description: "",
-    image: "",
   },
   {
     id: "review",
+    name: "펜타웍스 자체 솔루션 review 시스템",
+    period: "Feb 2021 - May 2021",
     contribution: 80,
     description: "",
-    image: "",
   },
   {
     id: "lottehomeshopping",
+    name: "롯데홈쇼핑 - iToo, wyd",
+    period: "Sep 2020 - Jan 2021",
     contribution: 30,
     description: "",
-    image: "",
   },
 ];
