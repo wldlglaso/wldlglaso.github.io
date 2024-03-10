@@ -8,7 +8,7 @@ export type Project = {
 export type ProjectDetail = {
   id: string;
   name: string;
-  contribution: number;
+  contribution: string;
   period: string;
   description: string;
 };
@@ -55,7 +55,7 @@ export const projectDetails: ProjectDetail[] = [
   {
     id: "dolfin",
     name: "Dolfin User side, Admin side",
-    contribution: 60,
+    contribution: "60%",
     period: "Sep 2022 - Present",
     description: "",
   },
@@ -63,28 +63,28 @@ export const projectDetails: ProjectDetail[] = [
     id: "microsite",
     name: "Dolfin Microsite",
     period: "Aug 2023 - Feb 2024",
-    contribution: 100,
+    contribution: "98%",
     description: "",
   },
   {
     id: "lottemart",
     name: "롯데마트GO - 코인 시스템",
     period: "Jun 2021 - May 2022",
-    contribution: 90,
+    contribution: "90%",
     description: "",
   },
   {
     id: "review",
     name: "펜타웍스 자체 솔루션 review 시스템",
     period: "Feb 2021 - May 2021",
-    contribution: 80,
+    contribution: "80%",
     description: "",
   },
   {
     id: "lottehomeshopping",
     name: "롯데홈쇼핑 - iToo, wyd",
     period: "Sep 2020 - Jan 2021",
-    contribution: 30,
+    contribution: "30%",
     description: "",
   },
 ];
