@@ -15,7 +15,7 @@ export function generateStaticParams() {
 
 export default function Page({ params }: { params: { id: string } }) {
   const { id } = params;
-  const { name, period, contribution } = getProjectDetail(id);
+  const { name, period, contribution, skills } = getProjectDetail(id);
 
   return (
     <div className="mx-auto w-[1120px] flex flex-col">
@@ -31,6 +31,7 @@ export default function Page({ params }: { params: { id: string } }) {
         <ContentWrap name="Period" description={period} />
         <ContentWrap name="Project" description={name} />
         <ContentWrap name="Contribution" description={contribution} />
+        <ContentWrap name="Skills Used" description={skills} />
       </div>
     </div>
   );

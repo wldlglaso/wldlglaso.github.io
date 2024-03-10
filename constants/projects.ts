@@ -11,6 +11,7 @@ export type ProjectDetail = {
   contribution: string;
   period: string;
   description: string;
+  skills: string;
 };
 
 export const projectList: Project[] = [
@@ -58,6 +59,8 @@ export const projectDetails: ProjectDetail[] = [
     contribution: "60%",
     period: "Sep 2022 - Present",
     description: "",
+    skills:
+      "React, Typescript, React-query, Next.js, jotai, Storybook, Tailwind, Git",
   },
   {
     id: "microsite",
@@ -65,6 +68,7 @@ export const projectDetails: ProjectDetail[] = [
     period: "Aug 2023 - Feb 2024",
     contribution: "98%",
     description: "",
+    skills: "Next.js, Typescript, Tailwind, Git, Framer-Motion, React-query",
   },
   {
     id: "lottemart",
@@ -72,6 +76,7 @@ export const projectDetails: ProjectDetail[] = [
     period: "Jun 2021 - May 2022",
     contribution: "90%",
     description: "",
+    skills: "React, Typescript, Redux, SVN",
   },
   {
     id: "review",
@@ -79,6 +84,7 @@ export const projectDetails: ProjectDetail[] = [
     period: "Feb 2021 - May 2021",
     contribution: "80%",
     description: "",
+    skills: "Vue.js, Bootstrap, Java, Spring Boot, MySQL, git",
   },
   {
     id: "lottehomeshopping",
@@ -86,5 +92,6 @@ export const projectDetails: ProjectDetail[] = [
     period: "Sep 2020 - Jan 2021",
     contribution: "30%",
     description: "",
+    skills: "Vue.js, Bootstrap, Java, Spring Boot, MySQL, git",
   },
 ];
