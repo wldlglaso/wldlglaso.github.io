@@ -17,7 +17,7 @@ const Card = ({
   mainSkills,
   subSkills,
 }: PropsWithChildren<Experience>) => (
-  <div className="hover:bg-blue-F p-[32px] rounded-[20px] flex flex-col md:flex-row gap-x-[32px] md:w-[700px]">
+  <div className="hover:bg-[#121212] p-[32px] rounded-[20px] flex flex-col md:flex-row gap-x-[32px] md:w-[700px]">
     <div className="text-blue-6A text-[14px] font-bold w-[100px] shrink-0">
       {period}
     </div>
