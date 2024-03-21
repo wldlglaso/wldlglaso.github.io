@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-spoca">{children}</body>
+      <body className="font-spoca bg-black">{children}</body>
     </html>
   );
 }
