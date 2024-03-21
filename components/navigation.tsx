@@ -35,7 +35,11 @@ const Navigation = () => {
       <div className="flex flex-col gap-y-[100px]">
         <div>
           <div className="w-[250px] h-[230px] relative mb-[40px]">
-            <Image src="/assets/common/illust.png" alt="illustration" fill />
+            <Image
+              src="/assets/navigation/illust.gif"
+              alt="illustration"
+              fill
+            />
           </div>
           <NavButton name="About" link="about" />
           <NavButton name="Experience" link="experience" />
