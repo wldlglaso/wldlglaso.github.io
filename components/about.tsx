@@ -1,30 +1,31 @@
 const About = () => (
-  <section id="about" className="pb-[60px] text-[18px] leading-[30px]">
-    <p>
-      <span className="font-semibold">
-        4년차 프론트엔드 개발자 임수진입니다.
-      </span>
+  <section
+    id="about"
+    className="pb-[60px] text-[16px] leading-[30px] w-[625px]"
+  >
+    <p className="text-gray-EA">
+      일관된 브랜드 경험을 만드는&nbsp;
+      <span className="font-bold">‘Plus X’의 브랜드 디자이너</span>로
+      근무하였습니다.
       <br />
-      효율적인 개발 프로세스와 재사용 가능한 UI 컴포넌트 개발을 위해 많은 고민을
-      합니다.
+      핀테크 기업 '금융의 진화'를 만들어 가는&nbsp;
+      <span className="font-bold">'웨이브릿지'의 브랜드 디자이너</span>로
+      근무하였습니다. <br />
+      기업과 서비스를 아름답게 디자인하고 브랜드에 대해 끊임없이 탐구하고
+      있습니다.
       <br />
-      자체&nbsp;
-      <span className="text-blue-main underline font-semibold">
-        디자인 시스템을 구축하여 개발자와 디자이너의 업무 효율을 크게 높인 경험
-      </span>
-      이 있습니다.
-      <br />
-      개발자 전직 전에는 외국계 기업들에서 근무하면서 다양한 업종 및 국적의
-      사람들과 일해왔습니다.
-      <br />
-      이러한 경험을 통해 얻은{" "}
-      <span className="text-blue-main underline font-semibold">
-        커뮤니케이션 능력으로 프로젝트 진행시 능동적인 협업
-      </span>
-      이 가능합니다.
-      <br />
-      또한 해외 고객사 및 협력 업체가 발생할 경우 영어 커뮤니케이션에 적극적으로
-      기여하고 싶습니다.
+      <span className="font-bold">대기업, 중견기업, 스타트업을 경험</span>하여
+      디자인에 대한 안목을 높여 BX 역량을 쌓아 올렸습니다.
+    </p>
+    <p className="mt-[20px] text-gray-A">
+      저는 제 일상의 모든 경험들에 몰입하는 것을 좋아합니다. 몰입하여 문제를
+      해결해 앞으로 나아가
+      <br />는 것 그것이 제가 인생에서 가장 중요하게 생각하는 가치관입니다. 그런
+      의미에서 브랜드 디자인은 저에게 늘 몰입의 설렘을 알게 해 준 작업입니다.
+      브랜드 아이덴티티를 만들어 내기 위한 치열한 논의 브랜드에 맞는 컬러,
+      타이포, 그래픽, UI/UX, 모션, 언어 등 다양한 디자인 요소를 담아 브랜드에
+      어울리는 것을 찾아나가는 과정은 그 어떤 일보다 저에게 가장 매력적이고
+      설레는 일입니다.
     </p>
   </section>
 );
