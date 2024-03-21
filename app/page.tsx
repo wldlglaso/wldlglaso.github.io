@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div className="flex flex-col md:flex-row px-6 mx-auto w-full md:w-[1200px] relative">
       <Navigation />
-      <main className="w-full md:w-[800px] my-[100px] md:pl-[60px] text-gray-4 divide-y-2 divide-gray-EA border-solid md:border-l-[2px] border-l-gray-EA">
+      <main className="w-full md:w-[800px] my-[100px] md:pl-[60px] text-gray-4 divide-y-2 divide-gray-4 border-solid md:border-l-[2px] border-l-gray-6">
         <About />
         <Experience />
         <Projects />

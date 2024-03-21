@@ -3,7 +3,7 @@ import "./globals.css";
 import Navigation from "@/components/navigation";
 
 export const metadata: Metadata = {
-  title: "Sienna Yim",
+  title: "Joy Choi",
   description: "",
 };
 
