@@ -1,6 +1,6 @@
 import Naver from "@/public/assets/navigation/naver.svg";
 import LinkedIn from "@/public/assets/navigation/linkedin.svg";
-import Instagram from "@/public/assets/navigation/instagram.svg";
+import Instagram from "@/public/assets/navigation/insta.svg";
 
 export const LinkButtons = () => (
   <div className="flex gap-x-[16px]">
