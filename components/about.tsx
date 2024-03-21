@@ -5,7 +5,7 @@ const About = () => (
   >
     <p className="text-gray-EA">
       일관된 브랜드 경험을 만드는&nbsp;
-      <span className="font-bold">‘Plus X’의 브랜드 디자이너</span>로
+      <span className="font-bold">{`‘Plus X’의 브랜드 디자이너`}</span>로
       근무하였습니다.
       <br />
       핀테크 기업 '금융의 진화'를 만들어 가는&nbsp;
