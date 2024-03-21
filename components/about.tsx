@@ -8,8 +8,8 @@ const About = () => (
       <span className="font-bold">{`‘Plus X’의 브랜드 디자이너`}</span>로
       근무하였습니다.
       <br />
-      핀테크 기업 '금융의 진화'를 만들어 가는&nbsp;
-      <span className="font-bold">'웨이브릿지'의 브랜드 디자이너</span>로
+      {`핀테크 기업 '금융의 진화'를 만들어 가는`}&nbsp;
+      <span className="font-bold">{`'웨이브릿지'의 브랜드 디자이너`}</span>로
       근무하였습니다. <br />
       기업과 서비스를 아름답게 디자인하고 브랜드에 대해 끊임없이 탐구하고
       있습니다.
