@@ -1,11 +1,9 @@
+import Education from "./education";
 import Skills from "./skills";
 
 const About = () => (
-  <>
-    <section
-      id="about"
-      className="pb-[60px] text-[16px] leading-[30px] w-[625px]"
-    >
+  <section id="about" className="divide-y-2 divide-gray-4">
+    <section className="pb-[60px] text-[16px] leading-[30px] w-[625px]">
       <p className="text-gray-EA">
         일관된 브랜드 경험을 만드는&nbsp;
         <span className="font-bold">{`‘Plus X’의 브랜드 디자이너`}</span>로
@@ -31,8 +29,9 @@ const About = () => (
         매력적이고 설레는 일입니다.
       </p>
     </section>
+    <Education />
     <Skills />
-  </>
+  </section>
 );
 
 export default About;
