@@ -82,7 +82,7 @@ export const projectList: Project[] = [
 
 export const projectDetails: ProjectDetail[] = [
   {
-    id: "dolfin",
+    id: "wavebridge",
     name: "Dolfin User side, Admin side",
     contribution: "60%",
     period: "Sep 2022 - Present",
@@ -91,7 +91,7 @@ export const projectDetails: ProjectDetail[] = [
       "React, Typescript, React-query, Next.js, jotai, Storybook, Tailwind, Git",
   },
   {
-    id: "microsite",
+    id: "neos",
     name: "Dolfin Microsite",
     period: "Aug 2023 - Feb 2024",
     contribution: "98%",
@@ -99,7 +99,7 @@ export const projectDetails: ProjectDetail[] = [
     skills: "Next.js, Typescript, Tailwind, Git, Framer-Motion, React-query",
   },
   {
-    id: "lottemart",
+    id: "dolfin",
     name: "롯데마트GO - 코인 시스템",
     period: "Jun 2021 - May 2022",
     contribution: "90%",
@@ -107,7 +107,7 @@ export const projectDetails: ProjectDetail[] = [
     skills: "React, Typescript, Redux, SVN",
   },
   {
-    id: "review",
+    id: "gryps",
     name: "펜타웍스 자체 솔루션 review 시스템",
     period: "Feb 2021 - May 2021",
     contribution: "80%",
@@ -115,7 +115,39 @@ export const projectDetails: ProjectDetail[] = [
     skills: "Vue.js, Bootstrap, Java, Spring Boot, MySQL, git",
   },
   {
-    id: "lottehomeshopping",
+    id: "internal",
+    name: "롯데홈쇼핑 - iToo, wyd",
+    period: "Sep 2020 - Jan 2021",
+    contribution: "30%",
+    description: "",
+    skills: "Vue.js, Bootstrap, Java, Spring Boot, MySQL, git",
+  },
+  {
+    id: "wb",
+    name: "롯데홈쇼핑 - iToo, wyd",
+    period: "Sep 2020 - Jan 2021",
+    contribution: "30%",
+    description: "",
+    skills: "Vue.js, Bootstrap, Java, Spring Boot, MySQL, git",
+  },
+  {
+    id: "surfer",
+    name: "롯데홈쇼핑 - iToo, wyd",
+    period: "Sep 2020 - Jan 2021",
+    contribution: "30%",
+    description: "",
+    skills: "Vue.js, Bootstrap, Java, Spring Boot, MySQL, git",
+  },
+  {
+    id: "hancom",
+    name: "롯데홈쇼핑 - iToo, wyd",
+    period: "Sep 2020 - Jan 2021",
+    contribution: "30%",
+    description: "",
+    skills: "Vue.js, Bootstrap, Java, Spring Boot, MySQL, git",
+  },
+  {
+    id: "mask",
     name: "롯데홈쇼핑 - iToo, wyd",
     period: "Sep 2020 - Jan 2021",
     contribution: "30%",

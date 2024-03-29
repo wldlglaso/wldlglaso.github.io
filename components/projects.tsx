@@ -1,15 +1,24 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { projectList, type Project } from "@/constants";
+import { useControlList } from "@/hooks";
 import Chevron from "@/public/assets/common/chevron.svg";
+import ViewMoreButton from "./viewMoreButton";
 
-const Projects = () => (
-  <section id="projects" className="py-[60px] flex flex-col gap-y-[60px]">
-    {projectList.map((project) => (
-      <Card {...project} key={project.title} />
-    ))}
-  </section>
-);
+const Projects = () => {
+  const { open, handleClickMore, slicedlist } = useControlList(5, projectList);
+
+  return (
+    <section id="projects" className="py-[60px] flex flex-col gap-y-[60px]">
+      {slicedlist.map((project) => (
+        <Card {...project} key={project.title} />
+      ))}
+      <ViewMoreButton isOpen={open} onClick={handleClickMore} />
+    </section>
+  );
+};
 
 const Card = ({ title, description, image, url }: Project) => (
   <div className="flex flex-col md:flex-row gap-x-[28px]">

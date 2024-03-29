@@ -1,13 +1,28 @@
-import type { PropsWithChildren } from "react";
-import { type Experience, experienceList } from "@/constants";
+"use client";
 
-const Experience = () => (
-  <section id="experience" className="py-[60px] flex flex-col gap-y-[34px]">
-    {experienceList.map((experience) => (
-      <Card {...experience} key={experience.company} />
-    ))}
-  </section>
-);
+import { type PropsWithChildren } from "react";
+import { type Experience, experienceList } from "@/constants";
+import { useControlList } from "@/hooks";
+import ViewMoreButton from "./viewMoreButton";
+
+const Experience = () => {
+  const { open, handleClickMore, slicedlist } = useControlList(
+    2,
+    experienceList
+  );
+
+  return (
+    <section
+      id="experience"
+      className="pt-[60px] pb-[40px] flex flex-col gap-y-[34px]"
+    >
+      {slicedlist.map((experience) => (
+        <Card {...experience} key={experience.company} />
+      ))}
+      <ViewMoreButton isOpen={open} onClick={handleClickMore} />
+    </section>
+  );
+};
 
 const Card = ({
   company,
