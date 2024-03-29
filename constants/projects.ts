@@ -16,39 +16,67 @@ export type ProjectDetail = {
 
 export const projectList: Project[] = [
   {
-    title: "Dolfin 가상자산 장외거래 서비스",
+    title: "01. Wavebridge Rebranding",
     description:
-      "Dolfin User side, Admin side 프론트엔드 개발, Dolfin 자체 디자인 시스템을 구축하는 프로젝트를 진행하였습니다.",
+      "웨이브릿지의 장기적인 방향성을 제시하기 위해\nC - Level & 임직원 인터뷰와 비즈니스 영역에 대한\n분석을 진행하였고 CI, BI, VI 를 개발하였습니다. ",
+    image: "./assets/projects/wavebridge.png",
+    url: "/wavebridge",
+  },
+  {
+    title: "02. NEOS Brand Design",
+    description:
+      "웨이브릿지가 미국에 설립한 합작 법인\n자산운용사의 브랜드를 개발하였습니다.",
+    image: "./assets/projects/neos.png",
+    url: "/neos",
+  },
+  {
+    title: "03. Dolfin Brand Design",
+    description:
+      "법인과 기관 전용 가상 자산을 중개하고\n통합 자산관리와 거래 편의성을 제공하는\n플랫폼의 브랜드를 개발하였습니다.",
     image: "./assets/projects/dolfin.png",
     url: "/dolfin",
   },
   {
-    title: "Dolfin Microsite",
+    title: "04. Gryps 브랜드 디자인",
     description:
-      "Dolfin Microsite(반응형 사이트) 프론트엔드 개발. Storybook을 도입하여 재사용 가능한 UI 프로토타입 개발&디자이너와의 업무 프로세스를 개선하였습니다.",
-    image: "./assets/projects/microsite.png",
-    url: "/microsite",
+      "법인과 코인 프로젝트, 가상 자산 기관들이\n투자할 수 있게 도와주는 글로벌 플랫폼의\n브랜드를 개발하였습니다.",
+    image: "/assets/projects/gryps.png",
+    url: "/gryps",
   },
   {
-    title: "롯데마트 GO - 코인 시스템",
+    title: "05. Internal Product (Login)",
     description:
-      "롯데마트 GO 코인 리워드 시스템 프론트엔드 개발. Redux를 사용해서 Props 복잡도를 개선하였습니다.",
-    image: "./assets/projects/lotte.png",
-    url: "/lottemart",
+      "웨이브릿지의 장기적인 방향성을 제시하기 위해\nC - Level & 임직원 인터뷰와 비즈니스 영역에 대한\n분석을 진행하였고 CI, BI, VI 를 개발하였습니다. ",
+    image: "./assets/projects/internal.png",
+    url: "/internal",
   },
   {
-    title: "펜타웍스 자체 솔루션 Review",
+    title: "06.  Wavebridge 1.0",
     description:
-      "고객사의 리뷰를 통계적으로 관리할 수 있는 Review 솔루션 개발. 풀스택 개발자로 참여하여 Rest API 개발부터 프론트엔드 개발까지 담당하였습니다.",
-    image: "/assets/projects/penta.png",
-    url: "/review",
+      "웨이브릿지의 장기적인 방향성을 제시하기 위해\nC - Level & 임직원 인터뷰와 비즈니스 영역에 대한\n가이드 라인을 개발하였습니다.",
+    image: "./assets/projects/wb.png",
+    url: "/wb",
   },
   {
-    title: "롯데 홈쇼핑 - IToo, Wyd",
+    title: "07. Crypto Surfers",
     description:
-      "콜센터 Back Office 개발에 풀스택 개발자로 참여. 1:1 문의, 이벤트 관리 메뉴 프론트엔드 및 서버 개발하였습니다.",
-    image: "./assets/projects/itoo.png",
-    url: "/lottehomeshopping",
+      "웨이브릿지 사내 임직원의 프로필용 대체불가능토큰\nNFT 크립토 서퍼 콜렉션을 개발하였습니다.",
+    image: "./assets/projects/surfer.png",
+    url: "/surfer",
+  },
+  {
+    title: "08. 한글과컴퓨터 대표 캐릭터",
+    description:
+      "한글과컴퓨터 대표 캐릭터 말랑말랑 무브먼트의\n캐릭터 가이드라인 제작 및 배포하였습니다. ",
+    image: "./assets/projects/hancom.png",
+    url: "/hancom",
+  },
+  {
+    title: "09. 화재대피 마스크",
+    description:
+      "한글과컴퓨터의 자회사 한컴 세이프티에서 개발한\n화재용 긴급 대피 마스크 패키지를 제작하였습니다.",
+    image: "./assets/projects/mask.png",
+    url: "/mask",
   },
 ];
 
