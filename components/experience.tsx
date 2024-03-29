@@ -19,7 +19,11 @@ const Experience = () => {
       {slicedlist.map((experience) => (
         <Card {...experience} key={experience.company} />
       ))}
-      <ViewMoreButton isOpen={open} onClick={handleClickMore} />
+      <ViewMoreButton
+        isOpen={open}
+        onClick={handleClickMore}
+        name="Experience"
+      />
     </section>
   );
 };

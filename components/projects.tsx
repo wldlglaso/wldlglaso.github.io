@@ -15,7 +15,7 @@ const Projects = () => {
       {slicedlist.map((project) => (
         <Card {...project} key={project.title} />
       ))}
-      <ViewMoreButton isOpen={open} onClick={handleClickMore} />
+      <ViewMoreButton isOpen={open} onClick={handleClickMore} name="Projects" />
     </section>
   );
 };
